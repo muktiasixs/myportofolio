@@ -4,11 +4,11 @@ import profileImage from '../assets/profile.jpeg';
 
 const About = () => {
   return (
-    // Pola selang-seling: Hero (dark), About (darker-grey)
+    
     <section id="about" className="py-24 bg-industrial-dark">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
-          {/* Kolom Gambar */}
+          
           <div className="md:col-span-1 flex justify-center animate-fade-in">
             <img
               src={profileImage}
@@ -17,7 +17,7 @@ const About = () => {
             />
           </div>
 
-          {/* Kolom Teks */}
+          
           <div className="md:col-span-2 space-y-6 animate-fade-in-up">
             <h2 className="text-4xl font-bold text-light-concrete mb-4">
               Tentang Saya

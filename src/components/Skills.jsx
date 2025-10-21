@@ -1,13 +1,13 @@
 // src/components/Skills.jsx
 import React from 'react';
 
-// Data skills (tetap sama)
 const skillsData = {
   programming: [
     { name: 'PHP', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968332.png' },
     { name: 'Java', iconUrl: 'https://cdn-icons-png.flaticon.com/128/226/226777.png' },
     { name: 'Python', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968350.png' },
     { name: 'JavaScript', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968292.png' },
+    { name: 'TypeScript', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg' },
     { name: 'HTML5', iconUrl: 'https://cdn-icons-png.flaticon.com/128/1051/1051277.png' },
     { name: 'CSS3', iconUrl: 'https://cdn-icons-png.flaticon.com/128/732/732190.png' },
     { name: 'C Lang', iconUrl: 'https://cdn-icons-png.flaticon.com/128/6132/6132222.png' },
@@ -16,15 +16,20 @@ const skillsData = {
     { name: 'Tailwind CSS', iconUrl: 'https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg' },
     { name: 'Bootstrap', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968672.png' },
     { name: 'MySQL', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968313.png' },
+    { name: 'Lua', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg' },
   ],
   designTools: [
     { name: 'Figma', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968705.png' },
     { name: 'Webflow', iconUrl: 'https://dhygzobemt712.cloudfront.net/Logo/Social_Square_Blue.png' },
+    { name: 'Framer', iconUrl: 'https://images.icon-icons.com/2699/PNG/512/framer_logo_icon_169149.png' },
+    { name: 'Canva', iconUrl: 'https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000' },
     { name: 'Photoshop', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968520.png' },
     { name: 'Illustrator', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968472.png' }, 
     { name: 'Premiere Pro', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg' }, 
-    { name: 'Canva', iconUrl: 'https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000' },
+    { name: 'After Effects', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg' }, 
     { name: 'Cursor', iconUrl: 'https://cursor.com/assets/images/logo.svg' },
+    { name: 'Visual Studio', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Visual_Studio_Icon_2022.svg' },
+    
   ],
 };
 
@@ -41,7 +46,7 @@ const SkillScroll = ({ skills, direction }) => {
               src={skill.iconUrl}
               alt={skill.name}
               className="h-16 w-16 object-contain mb-2"
-              // style={{ filter: ... }} DIHAPUS SESUAI PERMINTAAN
+              
             />
             <span className="text-sm font-medium text-subtle-concrete whitespace-nowrap">{skill.name}</span>
           </div>
@@ -53,10 +58,10 @@ const SkillScroll = ({ skills, direction }) => {
 
 const Skills = () => {
   return (
-    // Pola selang-seling: About (dark-grey), Skills (deep-dark)
+    
     <section id="skills" className="py-24 bg-deep-industrial">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Skills & Expertise</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Skills & Keahlian</h2>
         <SkillScroll skills={skillsData.programming} direction="left" />
         <SkillScroll skills={skillsData.designTools} direction="right" />
       </div>

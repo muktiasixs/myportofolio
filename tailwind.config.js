@@ -1,4 +1,4 @@
-// tailwind.config.js (Tema Terang / Dibalik)
+// tailwind.config.js
 export default {
   content: [
     "./index.html",
@@ -7,15 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Hirarki Background (Sekarang jadi Terang)
-        'bg-deep-industrial': '#E0E0E0',     // <-- Dibalik (sebelumnya #1A1A1A)
-        'bg-industrial-dark': '#BDBDBD',     // <-- Dibalik (ditukar dengan accent-steel)
-        'bg-industrial-medium': '#9E9E9E',   // <-- Dibalik (ditukar dengan text-subtle)
-
-        // Hirarki Teks (Sekarang jadi Gelap)
-        'text-light-concrete': '#1A1A1A',    // <-- Dibalik (sebelumnya #E0E0E0)
-        'text-subtle-concrete': '#333333',  // <-- Dibalik (ditukar dengan bg-medium)
-        'accent-steel': '#242424',          // <-- Dibalik (ditukar dengan bg-dark)
+        
+        'bg-deep-industrial': '#E0E0E0',     
+        'bg-industrial-dark': '#BDBDBD',     
+        'bg-industrial-medium': '#9E9E9E',   
+        'bg-footer-gray': '#242424',   
+        
+        'text-white': '#E9E9E9',
+        'text-light-concrete': '#1A1A1A',    
+        'text-subtle-concrete': '#333333',  
+        'accent-steel': '#242424',          
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],

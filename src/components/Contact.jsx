@@ -25,31 +25,33 @@ const Contact = () => {
   };
 
   return (
-    // Pola selang-seling: SocialMedia (deep-dark), Contact (dark-grey)
+    
     <section id="contact" className="py-24 bg-industrial-dark">
       <animated.div style={fadeIn} ref={ref} className="max-w-4xl mx-auto container px-4">
         <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Get In Touch</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
-          {/* Contact Info */}
+          
           <div className="bg-industrial-medium p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-6 text-light-concrete">Contact Information</h3>
             <div className="space-y-4 text-light-concrete">
               <div className="flex items-center">
-                <img src="https://cdn-icons-png.flaticon.com/128/1384/1384023.png" alt="WhatsApp" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" />
-                <p className="text-lg">+62 812-3456-7890</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/WhatsApp_logo-color-vertical.svg" alt="WhatsApp" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" />
+                <p className="text-lg">+62 812 86109699</p>
               </div>
               <div className="flex items-center">
-                <img src="https://cdn-icons-png.flaticon.com/128/1400/1400827.png" alt="LINE" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" />
                 <p className="text-lg">@muktiasixs</p>
               </div>
               <div className="flex items-center">
-                <img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="Instagram" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" />
-                <p className="text-lg">@dermagani_m</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" />
+                <p className="text-lg">Dermagani05@gmail.com</p>
               </div>
               <div className="flex items-center">
-                <img src="https://cdn-icons-png.flaticon.com/128/732/732200.png" alt="Email" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" />
-                <p className="text-lg">dermagani.muktiasa@binus.ac.id</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Microsoft_Outlook_logo_%282024%E2%80%932025%29.svg" alt="Outlook" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" />
+                <div>
+                  <p className="text-lg">Dermagani.muktiasa@binus.ac.id</p>
+                </div>
               </div>
             </div>
             <div className="mt-8">
@@ -57,7 +59,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
+          
           <div className="bg-industrial-medium p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold mb-6 text-light-concrete">Send Me a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -87,7 +89,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="w-full bg-light-concrete text-deep-industrial px-6 py-3 rounded-lg text-lg font-semibold hover:bg-accent-steel transition-all duration-300 transform hover:scale-105 shadow-lg relative"
+                className="w-full bg-light-concrete text-deep-industrial px-6 py-3 rounded-lg text-lg font-semibold hover:bg-amber-300 transition-all duration-300 transform hover:scale-105 shadow-lg relative"
                 disabled={formStatus === 'sending'}
               >
                 {formStatus === 'sending' ? (
@@ -99,8 +101,8 @@ const Contact = () => {
                   'Send Message'
                 )}
               </button>
-              {formStatus === 'success' && ( <p className="text-center text-green-500 mt-4 text-sm font-semibold">Message sent successfully!</p> )}
-              {formStatus === 'error' && ( <p className="text-center text-red-500 mt-4 text-sm font-semibold">Failed to send message.</p> )}
+              {formStatus === 'success' && ( <p className="text-center text-yellow-500 mt-4 text-sm font-semibold">Gunakan Email Untuk Menghubungi Saya! <br />Anda Adalah Perusahaan Yang Baik.</p> )}
+              {formStatus === 'error' && ( <p className="text-center text-red-500 mt-4 text-sm font-semibold">Gagal mengirim pesan.</p> )}
             </form>
           </div>
         </div>

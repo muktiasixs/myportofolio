@@ -5,21 +5,53 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom scrollbar tema gelap */
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.animate-twinkle {
+  animation: twinkle linear infinite;
+}
+
+
+@keyframes shooting-star {
+  0% {
+    transform: translateX(0) translateY(0) rotate(-45deg);
+    opacity: 1;
+    width: 0.5px; 
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-300px) translateY(300px) rotate(-45deg);
+    opacity: 0;
+    width: 150px; 
+  }
+}
+
+.animate-shooting-star {
+  animation: shooting-star ease-in-out infinite;
+}
+
+
+
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1A1A1A; /* bg-deep-industrial */
+  background: #1A1A1A; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #333333; /* bg-industrial-medium */
+  background: #333333; 
   border-radius: 5px;
   border: 2px solid #1A1A1A;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #9E9E9E; /* text-subtle-concrete */
+  background: #9E9E9E; 
 }
