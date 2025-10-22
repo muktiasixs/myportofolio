@@ -4,6 +4,19 @@ import React, { useState } from 'react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.getElementById(targetId.substring(1));
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    setIsOpen(false);
+  };
+
+
   const linkClass = "block py-2 px-3 text-light-concrete hover:text-subtle-concrete md:hover:bg-transparent md:p-0 transition-colors duration-300 " +
                     "relative " + 
                     "after:content-[''] " + 
@@ -54,11 +67,11 @@ const Navbar = () => {
           
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-accent-steel rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
-              <li><a href="#hero" className={linkClass}>Home</a></li>
-              <li><a href="#about" className={linkClass}>About</a></li>
-              <li><a href="#skills" className={linkClass}>Skills</a></li>
-              <li><a href="#projects" className={linkClass}>Projects</a></li>
-              <li><a href="#contact" className={linkClass}>Contact</a></li>
+              <li><a href="#hero" onClick={(e) => handleNavClick(e, '#hero')} className={linkClass}>Home</a></li>
+              <li><a href="#about" onClick={(e) => handleNavClick(e, '#about')} className={linkClass}>About</a></li>
+              <li><a href="#skills" onClick={(e) => handleNavClick(e, '#skills')} className={linkClass}>Skills</a></li>
+              <li><a href="#projects" onClick={(e) => handleNavClick(e, '#projects')} className={linkClass}>Projects</a></li>
+              <li><a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className={linkClass}>Contact</a></li>
             </ul>
           </div>
         </div>
@@ -92,11 +105,11 @@ const Navbar = () => {
           </svg>
         </button>
 
-        <li><a href="#hero" onClick={() => setIsOpen(false)} className={linkClass}>Home</a></li>
-        <li><a href="#about" onClick={() => setIsOpen(false)} className={linkClass}>About</a></li>
-        <li><a href="#skills" onClick={() => setIsOpen(false)} className={linkClass}>Skills</a></li>
-        <li><a href="#projects" onClick={() => setIsOpen(false)} className={linkClass}>Projects</a></li>
-        <li><a href="#contact" onClick={() => setIsOpen(false)} className={linkClass}>Contact</a></li>
+        <li><a href="#hero" onClick={(e) => handleNavClick(e, '#hero')} className={linkClass}>Home</a></li>
+        <li><a href="#about" onClick={(e) => handleNavClick(e, '#about')} className={linkClass}>About</a></li>
+        <li><a href="#skills" onClick={(e) => handleNavClick(e, '#skills')} className={linkClass}>Skills</a></li>
+        <li><a href="#projects" onClick={(e) => handleNavClick(e, '#projects')} className={linkClass}>Projects</a></li>
+        <li><a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className={linkClass}>Contact</a></li>
       </ul>
     </div>
     

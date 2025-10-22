@@ -28,7 +28,7 @@ const Contact = () => {
     
     <section id="contact" className="py-24 bg-industrial-dark">
       <animated.div style={fadeIn} ref={ref} className="max-w-4xl mx-auto container px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Get In Touch</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Hubungi Saya</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           

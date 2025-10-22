@@ -60,7 +60,8 @@ const Hero = () => {
             sequence={[
               'Mahasiswa Computer Science', 2000,
               'Aspiring Web Developer', 2000,
-              'Data Engineer & Analyst', 2000,
+              'Software Developer', 2000,
+              'Data Scientist & Analyst', 2000,
               'Management & Networking', 2000,
               'UI/UX Designer', 2000,
               'Ready for Internship!', 2000,
@@ -85,7 +86,7 @@ const Hero = () => {
               download
               className="inline-flex items-center justify-center border border-accent-steel text-accent-steel px-8 py-3 rounded-lg text-lg font-semibold 
                          hover:bg-sky-800 hover:text-bg-deep-industrial transition-all duration-300 transform hover:scale-105 shadow-lg"
-s            >
+          s>
                 <FaDownload className="mr-2" />
               Download CV
             </a>

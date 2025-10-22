@@ -7,7 +7,7 @@ import ttProfilePic from '../assets/tt.jpeg';
 const primarySocials = [
   { name: 'Instagram', username: '@mutiasasu', profilePic: igProfilePic, description: 'My daily life & inspirations.', link: 'https://www.instagram.com/mutiasasuu' },
   { name: 'LinkedIn', username: 'Dermagani Muktiasa', profilePic: liProfilePic, description: 'Connect with me professionally!', link: 'https://www.linkedin.com/in/dermagani-muktiasa-326447271' },
-  { name: 'TikTok', username: '@nyaruru_', profilePic: ttProfilePic, description: 'a small content creator', link: 'https://www.tiktok.com/@nyaruru_' },
+  { name: 'TikTok', username: '@nyaruru_', profilePic: ttProfilePic, description: 'an average gamer content creator', link: 'https://www.tiktok.com/@nyaruru_' },
 ];
 
 const secondarySocials = [
@@ -25,7 +25,7 @@ const SocialMedia = () => {
     
     <section id="social-media" className="py-24 bg-deep-industrial">
       <div className="container mx-auto px-4 max-w-5xl">
-        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Hubungi Saya</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Temui Saya di</h2>
 
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">

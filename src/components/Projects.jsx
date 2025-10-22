@@ -5,7 +5,6 @@ import { useInView } from 'react-intersection-observer';
 import { useSpring, useTransition, animated } from '@react-spring/web';
 //project 1
 import project1Image1 from '../assets/1project1.jpg';
-import project1Image2 from '../assets/1project2.png';
 //project 2
 import project2Image1 from '../assets/2project1.png';
 import project2Image2 from '../assets/2project2.png';
@@ -18,7 +17,7 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 const projects = [
   { id: 1, title: 'Game Development & Modding', 
     description: 'Developed game dan modded untuk kesengan dan hobby saya.', 
-    images: [project1Image1, project1Image2], 
+    images: [project1Image1], 
     link: 'https://drive.google.com/drive/folders/1jyRFZd1TTF4m_MQMNuKuTCEog6yARbd3?usp=sharing' },
 
   { id: 2, title: 'Website Development', 

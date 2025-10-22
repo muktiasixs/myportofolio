@@ -17,12 +17,14 @@ const skillsData = {
     { name: 'Bootstrap', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968672.png' },
     { name: 'MySQL', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968313.png' },
     { name: 'Lua', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg' },
+    { name: 'Git', iconUrl: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png' },
   ],
   designTools: [
     { name: 'Figma', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968705.png' },
     { name: 'Webflow', iconUrl: 'https://dhygzobemt712.cloudfront.net/Logo/Social_Square_Blue.png' },
     { name: 'Framer', iconUrl: 'https://images.icon-icons.com/2699/PNG/512/framer_logo_icon_169149.png' },
     { name: 'Canva', iconUrl: 'https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000' },
+    { name: 'Excel', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg' },
     { name: 'Photoshop', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968520.png' },
     { name: 'Illustrator', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968472.png' }, 
     { name: 'Premiere Pro', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg' }, 
@@ -61,7 +63,7 @@ const Skills = () => {
     
     <section id="skills" className="py-24 bg-deep-industrial">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Skills & Keahlian</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Keahlian & Aplikasi</h2>
         <SkillScroll skills={skillsData.programming} direction="left" />
         <SkillScroll skills={skillsData.designTools} direction="right" />
       </div>

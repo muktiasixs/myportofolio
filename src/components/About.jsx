@@ -1,15 +1,21 @@
 // src/components/About.jsx
 import React from 'react';
 import profileImage from '../assets/profile.png';
+import { useInView } from 'react-intersection-observer';
 
 const About = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
+
   return (
     
-    <section id="about" className="py-24 bg-industrial-dark">
+    <section id="about" ref={ref} className="py-24 bg-industrial-dark">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
           
-          <div className="md:col-span-1 flex justify-center animate-fade-in">
+          <div className={`md:col-span-1 flex justify-center transition-opacity duration-1000 ${inView ? 'animate-fade-in' : 'opacity-0'}`}>
             <img
               src={profileImage}
               alt="Foto Profil Dermagani Muktiasa"
@@ -18,7 +24,7 @@ const About = () => {
           </div>
 
           
-          <div className="md:col-span-2 space-y-6 animate-fade-in-up">
+          <div className={`md:col-span-2 space-y-6 transition-all duration-1000 delay-300 ${inView ? 'animate-fade-in-up' : 'opacity-0 translate-y-4'}`}>
             <h2 className="text-4xl font-bold text-light-concrete mb-4">
               Tentang Saya
             </h2>
@@ -27,7 +33,7 @@ const About = () => {
                 Halo! Saya Dermagani Muktiasa, mahasiswa Computer Science di Universitas Bina Nusantara (Binus) yang sedang berencana mengikuti program magang kampus selama 12 bulan untuk mengembangkan kemampuan teknis dan pengalaman profesional di bidang teknologi informasi.
               </p>
               <p>
-                Saya memiliki pemahaman yang baik tentang pemrograman dan pengembangan web, serta tertarik pada <span className="font-semibold text-light-concrete">desain UI/UX, web development, data analysis, network management, dan management system</span>. Keterampilan ini didukung oleh penguasaan berbagai bahasa dan framework modern.
+                Saya memiliki pemahaman yang baik tentang pemrograman dan pengembangan web, serta tertarik pada <span className="font-semibold text-light-concrete">data, jaringan, manajemen sistem, Web & Sofware, dan desain UI/UX</span>. Keterampilan ini didukung oleh penguasaan berbagai bahasa dan framework modern.
               </p>
               <p>
                 Saya dikenal sebagai pribadi yang disiplin, bertanggung jawab, dan menjunjung tinggi integritas. Saya percaya bahwa bekerja dengan jujur dan profesional dapat membantu saya memberikan dampak positif serta ikut memajukan perusahaan.
