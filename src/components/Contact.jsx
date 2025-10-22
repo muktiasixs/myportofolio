@@ -36,26 +36,26 @@ const Contact = () => {
             <h3 className="text-2xl font-semibold mb-6 text-light-concrete">Contact Information</h3>
             <div className="space-y-4 text-light-concrete">
               <div className="flex items-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/WhatsApp_logo-color-vertical.svg" alt="WhatsApp" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/WhatsApp_logo-color-vertical.svg" alt="WhatsApp" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" draggable="false" />
                 <p className="text-lg">+62 812 86109699</p>
               </div>
               <div className="flex items-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" draggable="false" />
                 <p className="text-lg">@muktiasixs</p>
               </div>
               <div className="flex items-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Gmail" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" draggable="false" />
                 <p className="text-lg">Dermagani05@gmail.com</p>
               </div>
               <div className="flex items-center">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Microsoft_Outlook_logo_%282024%E2%80%932025%29.svg" alt="Outlook" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Microsoft_Outlook_logo_%282024%E2%80%932025%29.svg" alt="Outlook" className="w-8 h-8 mr-4 filter grayscale hover:grayscale-0 transition-all duration-300" draggable="false" />
                 <div>
                   <p className="text-lg">Dermagani.muktiasa@binus.ac.id</p>
                 </div>
               </div>
             </div>
             <div className="mt-8">
-              <img src="https://media1.tenor.com/m/MMo4B6tp-GMAAAAC/job-application.gif" alt="Contact Placeholder" className="w-full h-auto rounded-lg shadow-inner" />
+              <img src="https://media1.tenor.com/m/MMo4B6tp-GMAAAAC/job-application.gif" alt="Contact Placeholder" className="w-full h-auto rounded-lg shadow-inner" draggable="false" />
             </div>
           </div>
 

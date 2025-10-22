@@ -37,7 +37,12 @@ const SocialMedia = () => {
               rel="noopener noreferrer"
               className="flex flex-col items-center p-6 bg-industrial-medium rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group"
             >
-              <img src={platform.profilePic} alt={`${platform.name} Profile`} className="w-16 h-16 rounded-full object-cover mb-3 border-2 border-accent-steel group-hover:border-light-concrete transition-colors duration-300" />
+              <img
+                src={platform.profilePic}
+                alt={`${platform.name} Profile`}
+                className="w-16 h-16 rounded-full object-cover mb-3 border-2 border-accent-steel group-hover:border-light-concrete transition-colors duration-300"
+                draggable="false"
+              />
               <p className="text-light-concrete font-semibold text-lg">{platform.name}</p>
               <p className="text-subtle-concrete text-sm mb-2">{platform.username}</p>
               <p className="text-center text-sm text-subtle-concrete italic">{platform.description}</p>
@@ -52,7 +57,8 @@ const SocialMedia = () => {
               <img 
                 src={platform.icon} 
                 alt={platform.name} 
-                className="w-10 h-10 object-contain" 
+                className="w-10 h-10 object-contain"
+                draggable="false"
               />
             </a>
           ))}

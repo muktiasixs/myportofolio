@@ -46,7 +46,7 @@ const SkillScroll = ({ skills, direction }) => {
               src={skill.iconUrl}
               alt={skill.name}
               className="h-16 w-16 object-contain mb-2"
-              
+              draggable="false"
             />
             <span className="text-sm font-medium text-subtle-concrete whitespace-nowrap">{skill.name}</span>
           </div>
