@@ -1,5 +1,6 @@
 // src/components/Navbar.jsx
 import React, { useState } from 'react';
+import icon from '../assets/icon.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +45,8 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <a href="#" className="flex items-center">
+          <a href="#" className="flex items-center" onClick={(e) => handleNavClick(e, '#hero')}>
+            <img src={icon} alt="Logo" className="h-8 w-8 mr-3 rounded-full object-cover" />
             <span className="text-2xl font-semibold whitespace-nowrap text-light-concrete">
               Dermagani M.
             </span>
