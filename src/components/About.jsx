@@ -1,6 +1,8 @@
 // src/components/About.jsx
 import React from 'react';
 import profileImage from '../assets/profile.png';
+import Tilt from 'react-parallax-tilt';
+import FloatingShapes from './FloatingShapes';
 import { useInView } from 'react-intersection-observer';
 
 const About = () => {
@@ -11,16 +13,28 @@ const About = () => {
 
   return (
     
-    <section id="about" ref={ref} className="py-24 bg-industrial-dark">
+    <section id="about" ref={ref} className="relative py-24 bg-industrial-dark overflow-hidden">
       <div className="container mx-auto px-4 max-w-6xl">
+        <FloatingShapes />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
           
           <div className={`md:col-span-1 flex justify-center transition-opacity duration-1000 ${inView ? 'animate-fade-in' : 'opacity-0'}`}>
-            <img
-              src={profileImage}
-              alt="Foto Profil Dermagani Muktiasa"
-              className="w-64 h-64 md:w-full md:h-auto object-cover rounded-lg shadow-2xl border-4 border-accent-steel"
-            />
+            <Tilt
+              tiltMaxAngleX={10}
+              tiltMaxAngleY={10}
+              perspective={1000}
+              glareEnable={true}
+              glareMaxOpacity={0.20}
+              glarePosition="all"
+              className="w-64 h-64 md:w-full md:h-auto rounded-lg shadow-2xl group relative overflow-hidden border-4 border-accent-steel transition-transform duration-300 hover:scale-120"
+            >
+              <img
+                src={profileImage}
+                alt="Foto Profil Dermagani Muktiasa"
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute top-0 -left-full w-1/2 h-full bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-50 group-hover:animate-shine"></div>
+            </Tilt>
           </div>
 
           

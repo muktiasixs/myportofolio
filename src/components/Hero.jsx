@@ -34,14 +34,15 @@ const Hero = () => {
     
     <section 
       id="hero" 
-      className="relative flex items-center justify-center min-h-screen text-center overflow-hidden"
+      className="relative flex items-center justify-center min-h-screen text-center overflow-hidden" // Ensure overflow-hidden is kept for StarryBackground
     >
       
       <div 
-        className="absolute inset-0 -z-10 
-                   bg-gradient-to-r from-bg-deep-industrial via-bg-industrial-medium to-bg-industrial-dark
-                   animate-gradient-bg overflow-hidden"
-        style={{ backgroundSize: '200% 200%' }}
+        className="absolute inset-0 -z-10 overflow-hidden" // Removed previous gradient and animation classes
+        style={{
+          backgroundColor: '#4F4F52', // Fallback solid color
+          background: 'linear-gradient(to bottom, #4F4F52, #7D7D82, #ACACAF, #ffffff)', // Dark gray to white gradient
+        }}
       >
         <StarryBackground />
       </div>

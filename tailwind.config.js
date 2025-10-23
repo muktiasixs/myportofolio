@@ -25,6 +25,7 @@ export default {
         'loop-scroll-left': 'loop-scroll-left 50s linear infinite',
         'loop-scroll-right': 'loop-scroll-right 50s linear infinite',
         'gradient-bg': 'gradient-bg 15s ease infinite', 
+        'shine': 'shine 1.2s ease-in-out',
       },
       keyframes: {
         'loop-scroll-left': {
@@ -38,6 +39,10 @@ export default {
         'gradient-bg': {
           '0%, 100%': { backgroundPosition: '0% 50%' },
           '50%': { backgroundPosition: '100% 50%' },
+        },
+        'shine': {
+          'from': { transform: 'translateX(-100%) skewX(-20deg)' },
+          'to': { transform: 'translateX(200%) skewX(-20deg)' },
         },
       }
     },
