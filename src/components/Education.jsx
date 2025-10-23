@@ -60,7 +60,7 @@ const Education = () => {
               <h3 className="text-2xl font-bold text-light-concrete">
                 SMK 1 Perguruan Cikini
               </h3>
-              <p className="text-lg text-subtle-concrete mt-1">Rekayasa Perangkat Lunak</p>
+              <p className="text-lg text-subtle-concrete mt-1">Electonica Industry</p>
               <p className="text-md text-subtle-concrete/70 mt-2">2020 - 2023</p>
             </div>
           </div>
