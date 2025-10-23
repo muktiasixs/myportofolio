@@ -15,7 +15,7 @@ const FloatingShapes = () => {
       {shapes.map((shape, i) => (
         <div
           key={i}
-          className={`absolute border-2 border-accent-steel/10 rounded-lg shadow-xl opacity-50 ${shape.size}`}
+          className={`absolute border-2 border-accent-steel/20 rounded-lg shadow-xl opacity-70 ${shape.size}`}
           style={shape.position}
         />
       ))}
