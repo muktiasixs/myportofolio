@@ -83,7 +83,7 @@ const Hero = () => {
             </a>
             
             <a
-              href="/dermagani_muktiasa_cv.pdf" // Ganti ini dengan path ke file CV
+              href="/cv.zip" // Ganti ini dengan path ke file .zip Anda
               download
               className="inline-flex items-center justify-center border border-accent-steel text-accent-steel px-8 py-3 rounded-lg text-lg font-semibold 
                          hover:bg-sky-800 hover:text-bg-deep-industrial transition-all duration-300 transform hover:scale-105 shadow-lg"
