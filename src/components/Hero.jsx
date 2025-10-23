@@ -83,11 +83,12 @@ const Hero = () => {
             </a>
             
             <a
-              href="../public/CV.zip" // Ganti ini dengan path ke file .zip Anda
-              download
+              href="https://drive.google.com/drive/folders/1jyRFZd1TTF4m_MQMNuKuTCEog6yARbd3?usp=sharing" // Ganti ini dengan link ke CV Anda
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center border border-accent-steel text-accent-steel px-8 py-3 rounded-lg text-lg font-semibold 
                          hover:bg-sky-800 hover:text-bg-deep-industrial transition-all duration-300 transform hover:scale-105 shadow-lg"
-          s>
+            >
                 <FaDownload className="mr-2" />
               Download CV
             </a>
