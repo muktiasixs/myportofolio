@@ -2,7 +2,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { useSpring, animated } from '@react-spring/web';
-import binus from '../assets/binus.png';
+
 
 
 
@@ -28,7 +28,7 @@ const Education = () => {
             <div className="absolute top-0 -left-full w-1/2 h-full bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-50 group-hover:animate-shine"></div>
             <div className="flex-shrink-0">
               <img 
-                src={binus} 
+                src='https://upload.wikimedia.org/wikipedia/id/a/a2/Logo_Binus_University.png'
                 alt="Logo Universitas Bina Nusantara" 
                 className="h-24 w-24 object-contain bg-white p-2 rounded-md"
               />
