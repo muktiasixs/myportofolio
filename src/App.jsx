@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import SocialMedia from './components/SocialMedia';
 import Contact from './components/Contact'; 
 import Footer from './components/Footer';
+import Education from './components/Education';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,6 +35,7 @@ function App() {
           <main>
             <Hero />
             <About />
+            <Education />
             <Skills />
             <Projects />
             <SocialMedia />

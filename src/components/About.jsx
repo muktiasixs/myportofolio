@@ -47,7 +47,7 @@ const About = () => {
                 Halo! Saya Dermagani Muktiasa, mahasiswa Computer Science di Universitas Bina Nusantara (Binus) yang sedang berencana mengikuti program magang kampus selama 12 bulan untuk mengembangkan kemampuan teknis dan pengalaman profesional di bidang teknologi informasi.
               </p>
               <p>
-                Saya memiliki pemahaman yang baik tentang pemrograman dan pengembangan web, serta tertarik pada <span className="font-semibold text-light-concrete">data, jaringan, manajemen sistem, Web & Sofware, dan desain UI/UX</span>. Keterampilan ini didukung oleh penguasaan berbagai bahasa dan framework modern.
+                Saya memiliki pemahaman yang baik tentang pemrograman dan pengembangan web, serta tertarik pada <span className="font-semibold text-light-concrete">data, jaringan, manajemen sistem, Web & Sofware Dev, dan desain UI/UX</span>. Keterampilan ini didukung oleh penguasaan berbagai bahasa dan framework modern.
               </p>
               <p>
                 Saya dikenal sebagai pribadi yang disiplin, bertanggung jawab, dan menjunjung tinggi integritas. Saya percaya bahwa bekerja dengan jujur dan profesional dapat membantu saya memberikan dampak positif serta ikut memajukan perusahaan.
