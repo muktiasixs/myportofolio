@@ -18,6 +18,8 @@ const skillsData = {
     { name: 'MySQL', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968313.png' },
     { name: 'Lua', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Lua-Logo.svg' },
     { name: 'Git', iconUrl: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png' },
+    { name: 'Next.js', iconUrl: 'https://images.seeklogo.com/logo-png/44/2/next-js-icon-logo-png_seeklogo-449825.png' },
+    { name: 'Laravel', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg' },
   ],
   designTools: [
     { name: 'Figma', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968705.png' },
