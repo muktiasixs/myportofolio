@@ -100,7 +100,7 @@ const Hero = () => {
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-full max-w-lg px-4">
           
           <div className="grid grid-cols-3 gap-3">
-              <StatCard String={12} label="month Internship" />
+              <StatCard value={12} label="month Internship" />
               <StatCard value={5} label="Skills" suffix="+" />
               <StatCard value={100} label="Commitment" suffix="%" />
           </div>
