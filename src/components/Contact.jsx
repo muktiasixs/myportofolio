@@ -28,7 +28,7 @@ const Contact = () => {
     
     <section id="contact" className="py-24 bg-industrial-dark">
       <animated.div style={fadeIn} ref={ref} className="max-w-4xl mx-auto container px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Hubungi Saya</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Contact Me</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           
@@ -101,8 +101,8 @@ const Contact = () => {
                   'Send Message'
                 )}
               </button>
-              {formStatus === 'success' && ( <p className="text-center text-yellow-500 mt-4 text-sm font-semibold">Gunakan Email Untuk Menghubungi Saya! <br />Anda Adalah Perusahaan Yang Baik.</p> )}
-              {formStatus === 'error' && ( <p className="text-center text-red-500 mt-4 text-sm font-semibold">Gagal mengirim pesan.</p> )}
+              {formStatus === 'success' && ( <p className="text-center text-yellow-500 mt-4 text-sm font-semibold">Please Use Email to Contact Me! <br />You Are a Great Company.</p> )}
+              {formStatus === 'error' && ( <p className="text-center text-red-500 mt-4 text-sm font-semibold">Failed to send message.</p> )}
             </form>
           </div>
         </div>

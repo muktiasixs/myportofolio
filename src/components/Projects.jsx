@@ -16,17 +16,17 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const projects = [
   { id: 1, title: 'Game Development & Modding', 
-    description: 'Developed game dan modded untuk kesengan dan hobby saya.', 
+    description: 'Developed games and mods for fun and as a hobby.', 
     images: [project1Image1], 
     link: 'https://drive.google.com/drive/folders/1jyRFZd1TTF4m_MQMNuKuTCEog6yARbd3?usp=sharing' },
 
   { id: 2, title: 'Website Development', 
-    description: 'Web yang saya buat untuk tugas kuliah dan portofolio saya ini.', 
+    description: 'Websites I created for college assignments and this portfolio.', 
     images: [project2Image1, project2Image2, project2Image3], 
     link: 'https://drive.google.com/drive/folders/1jyRFZd1TTF4m_MQMNuKuTCEog6yARbd3?usp=sharing' },
 
   { id: 3, title: 'UI/UX Design', 
-    description: 'Design figma dari tugas kuliah dan lomba ui/ux.', 
+    description: 'Figma designs from college assignments and UI/UX competitions.', 
     images: [project3Image1, project3Image2], 
     link: 'https://drive.google.com/drive/folders/1jyRFZd1TTF4m_MQMNuKuTCEog6yARbd3?usp=sharing' },
 ];
@@ -112,7 +112,7 @@ const ProjectCard = ({ project, delay }) => {
           rel="noopener noreferrer"
           className="inline-block bg-light-concrete text-deep-industrial px-5 py-2 rounded-lg text-sm font-semibold hover:bg-amber-300 transition-colors duration-300 transform group-hover:scale-105"
         >
-          Lihat Proyek
+          View Project
           <span className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
         </a>
       </div>
@@ -136,7 +136,7 @@ const Projects = () => {
 
     <section id="projects" className="py-24 bg-industrial-dark">
       <animated.div style={sectionFadeIn} ref={ref} className="container mx-auto px-4 max-w-6xl">
-        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Proyek Saya</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">My Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <ProjectCard key={project.id} project={project} delay={index * 150} />

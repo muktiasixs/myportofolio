@@ -34,14 +34,14 @@ const Hero = () => {
     
     <section 
       id="hero" 
-      className="relative flex items-center justify-center min-h-screen text-center overflow-hidden" // Ensure overflow-hidden is kept for StarryBackground
+      className="relative flex items-center justify-center min-h-screen text-center overflow-hidden" 
     >
       
       <div 
-        className="absolute inset-0 -z-10 overflow-hidden" // Removed previous gradient and animation classes
+        className="absolute inset-0 -z-10 overflow-hidden" 
         style={{
-          backgroundColor: '#4F4F52', // Fallback solid color
-          background: 'linear-gradient(to bottom, #4F4F52, #7D7D82, #ACACAF, #ffffff)', // Dark gray to white gradient
+          backgroundColor: '#4F4F52', 
+          background: 'linear-gradient(to bottom, #4F4F52, #7D7D82, #ACACAF, #ffffff)', 
         }}
       >
         <StarryBackground />
@@ -59,13 +59,13 @@ const Hero = () => {
 
           <TypeAnimation
             sequence={[
-              'Mahasiswa Computer Science', 2000,
+              'Computer Science Student', 2000,
               'Aspiring Web Developer', 2000,
               'Software Developer', 2000,
               'Data Scientist & Analyst', 2000,
               'Management & Networking', 2000,
               'UI/UX Designer', 2000,
-              'Ready for Internship!', 2000,
+              'Ready for an Internship!', 2000,
             ]}
             wrapper="p"
             speed={50}
@@ -79,11 +79,11 @@ const Hero = () => {
               className="inline-block bg-text-light-concrete text-bg-deep-industrial px-8 py-3 rounded-lg text-lg font-semibold 
                          hover:bg-accent-steel transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
-              Lihat Pekerjaan Saya
+              See My Work
             </a>
             
             <a
-              href="https://drive.google.com/drive/folders/1jyRFZd1TTF4m_MQMNuKuTCEog6yARbd3?usp=sharing" // Ganti ini dengan link ke CV Anda
+              href="https://drive.google.com/drive/folders/1jyRFZd1TTF4m_MQMNuKuTCEog6yARbd3?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center border border-accent-steel text-accent-steel px-8 py-3 rounded-lg text-lg font-semibold 
@@ -100,9 +100,9 @@ const Hero = () => {
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-full max-w-lg px-4">
           
           <div className="grid grid-cols-3 gap-3">
-              <StatCard value={12} label="Bulan Magang" />
-              <StatCard value={5} label="Keahlian" suffix="+" />
-              <StatCard value={100} label="Komitmen" suffix="%" />
+              <StatCard String={12} label="month Internship" />
+              <StatCard value={5} label="Skills" suffix="+" />
+              <StatCard value={100} label="Commitment" suffix="%" />
           </div>
       </div>
 

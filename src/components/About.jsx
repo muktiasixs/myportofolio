@@ -40,17 +40,17 @@ const About = () => {
           
           <div className={`md:col-span-2 space-y-6 transition-all duration-1000 delay-300 ${inView ? 'animate-fade-in-up' : 'opacity-0 translate-y-4'}`}>
             <h2 className="text-4xl font-bold text-light-concrete mb-4">
-              Tentang Saya
+              About Me
             </h2>
             <div className="text-lg leading-relaxed text-subtle-concrete space-y-4">
               <p>
-                Halo! Saya Dermagani Muktiasa, mahasiswa Computer Science di Universitas Bina Nusantara (Binus) yang sedang berencana mengikuti program magang kampus selama 12 bulan untuk mengembangkan kemampuan teknis dan pengalaman profesional di bidang teknologi informasi.
+                Hello! I'm Dermagani Muktiasa, a Computer Science student at Bina Nusantara University (Binus) planning to participate in a 12-month campus internship program to develop my technical skills and professional experience in the information technology field.
               </p>
               <p>
-                Saya memiliki pemahaman yang baik tentang pemrograman dan pengembangan web, serta tertarik pada <span className="font-semibold text-light-concrete">data, jaringan, manajemen sistem, Web & Sofware Dev, dan desain UI/UX</span>. Keterampilan ini didukung oleh penguasaan berbagai bahasa dan framework modern.
+                I have a good understanding of programming and web development, with an interest in <span className="font-semibold text-light-concrete">data, networking, system management, Web & Software Dev, and UI/UX design</span>. These skills are supported by proficiency in various modern languages and frameworks.
               </p>
               <p>
-                Saya dikenal sebagai pribadi yang disiplin, bertanggung jawab, dan menjunjung tinggi integritas. Saya percaya bahwa bekerja dengan jujur dan profesional dapat membantu saya memberikan dampak positif serta ikut memajukan perusahaan.
+                I am known for being a disciplined, responsible, and highly integral individual. I believe that working with honesty and professionalism will help me make a positive impact and contribute to the company's advancement.
               </p>
             </div>
           </div>

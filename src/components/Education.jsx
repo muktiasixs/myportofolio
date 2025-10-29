@@ -21,7 +21,7 @@ const Education = () => {
   return (
     <section id="education" className="py-20 bg-industrial-dark">
       <animated.div style={animation} ref={ref} className="container mx-auto px-4 max-w-7xl">
-        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Pendidikan</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Education</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           
           <div className="group relative overflow-hidden bg-industrial-medium p-8 rounded-lg shadow-lg flex flex-col sm:flex-row items-center gap-8 transition-all duration-300 hover:shadow-2xl  border border-transparent">

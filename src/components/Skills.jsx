@@ -65,7 +65,7 @@ const Skills = () => {
     
     <section id="skills" className="py-24 bg-deep-industrial">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Keahlian & Aplikasi</h2>
+        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">skills & tools</h2>
         <SkillScroll skills={skillsData.programming} direction="left" />
         <SkillScroll skills={skillsData.designTools} direction="right" />
       </div>
