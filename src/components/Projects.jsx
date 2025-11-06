@@ -12,6 +12,9 @@ import project2Image3 from '../assets/2project3.png';
 //project 3
 import project3Image1 from '../assets/3project1.png';
 import project3Image2 from '../assets/3project2.png';
+import project3Image3 from '../assets/3project3.png';
+import project3Image4 from '../assets/3project4.png';
+
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const projects = [
@@ -27,7 +30,7 @@ const projects = [
 
   { id: 3, title: 'UI/UX Design', 
     description: 'Figma designs from college assignments and UI/UX competitions.', 
-    images: [project3Image1, project3Image2], 
+    images: [project3Image1, project3Image2, project3Image3, project3Image4], 
     link: 'https://drive.google.com/drive/folders/1jyRFZd1TTF4m_MQMNuKuTCEog6yARbd3?usp=sharing' },
 ];
 

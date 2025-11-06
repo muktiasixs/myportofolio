@@ -16,7 +16,7 @@ const secondarySocials = [
   { name: 'Spotify', icon: 'https://cdn-icons-png.flaticon.com/128/174/174872.png', link: 'https://open.spotify.com/user/mt4tgpdb82nmr4k1c1uwysluf?si=ab24838a6d0b4066' },
   { name: 'YouTube', icon: 'https://cdn-icons-png.flaticon.com/128/174/174883.png', link: 'https://www.youtube.com/@m4n1s' },
   { name: 'Facebook', icon: 'https://cdn-icons-png.flaticon.com/128/174/174848.png', link: 'https://www.facebook.com/dermagani.muktiasa.58/' },
-  { name: 'X (Twitter)', icon: 'https://cdn-icons-png.flaticon.com/128/5969/5969020.png', link: 'https://x.com/mutiasasu' },
+  { name: 'Twitter / X', icon: 'https://cdn-icons-png.flaticon.com/128/5969/5969020.png', link: 'https://x.com/mutiasasu' },
   { name: 'github', icon: 'https://registry.npmmirror.com/@lobehub/icons-static-png/1.74.0/files/light/github.png', link: 'https://github.com/muktiasixs' }, 
 ];
 
@@ -53,14 +53,17 @@ const SocialMedia = () => {
         
         <div className="flex justify-center items-center flex-wrap gap-8">
           {secondarySocials.map((platform, index) => (
-            <a key={index} href={platform.link} target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 hover:scale-110">
-              <img 
-                src={platform.icon} 
-                alt={platform.name} 
-                className="w-10 h-10 object-contain"
-                draggable="false"
-              />
-            </a>
+            <div key={index} className="group flex flex-col items-center text-center">
+              <a href={platform.link} target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 hover:scale-110">
+                <img 
+                  src={platform.icon} 
+                  alt={platform.name} 
+                  className="w-10 h-10 object-contain"
+                  draggable="false"
+                />
+              </a>
+              <span className="text-xs font-bold text-subtle-concrete mt-2 opacity-0 group-hover:opacity-100 transform -translate-y-1 group-hover:translate-y-0 transition-all duration-300">{platform.name}</span>
+            </div>
           ))}
         </div>
       </div>
