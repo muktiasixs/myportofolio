@@ -47,7 +47,7 @@ const About = () => {
                 Hello! I'm Dermagani Muktiasa, a Computer Science student at Bina Nusantara University (Binus) planning to participate in a 12-month campus internship program to develop my technical skills and professional experience in the information technology field.
               </p>
               <p>
-                I have a good understanding of programming and web development, with an interest in <span className="font-semibold text-light-concrete">data, networking, system management, Web & Software Dev, and UI/UX design</span>. These skills are supported by proficiency in various modern languages and frameworks.
+                I have a good understanding of programming and web development, with an interest in <a class="underline decoration-sky-500"><span className="font-semibold text-light-concrete">data, networking, system management, Web & Software Dev, and UI/UX design</span>.</a> These skills are supported by proficiency in various modern languages and frameworks.
               </p>
               <p>
                 I am known for being a disciplined, responsible, and highly integral individual. I believe that working with honesty and professionalism will help me make a positive impact and contribute to the company's advancement.

@@ -20,6 +20,7 @@ const skillsData = {
     { name: 'Git', iconUrl: 'https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png' },
     { name: 'Next.js', iconUrl: 'https://images.seeklogo.com/logo-png/44/2/next-js-icon-logo-png_seeklogo-449825.png' },
     { name: 'Laravel', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg' },
+    { name: 'React Bits', iconUrl: 'https://raw.githubusercontent.com/DavidHDev/react-bits/b5cbc318ce4979762fb59c939094109f74ffbe46/src/assets/logos/react-bits-logo-small-black.svg' },
   ],
   designTools: [
     { name: 'Figma', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968705.png' },

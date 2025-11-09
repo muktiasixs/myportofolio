@@ -15,7 +15,7 @@ import project3Image2 from '../assets/3project2.png';
 import project3Image3 from '../assets/3project3.png';
 import project3Image4 from '../assets/3project4.png';
 
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight, FaGithub } from 'react-icons/fa';
 
 const projects = [
   { id: 1, title: 'Game Development & Modding', 
@@ -113,7 +113,7 @@ const ProjectCard = ({ project, delay }) => {
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-light-concrete text-deep-industrial px-5 py-2 rounded-lg text-sm font-semibold hover:bg-amber-300 transition-colors duration-300 transform group-hover:scale-105"
+          className="flex-1 text-center bg-light-concrete text-deep-industrial px-4 py-2 rounded-lg text-sm font-semibold hover:bg-amber-300 hover:shadow-lg hover:shadow-amber-300/50 transition-all duration-300 transform group-hover:scale-105"
         >
           View Project
           <span className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
@@ -139,7 +139,12 @@ const Projects = () => {
 
     <section id="projects" className="py-24 bg-industrial-dark">
       <animated.div style={sectionFadeIn} ref={ref} className="container mx-auto px-4 max-w-6xl">
-        <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">My Projects</h2>
+        <div className="flex justify-center items-center gap-4 mb-12">
+          <h2 className="text-4xl font-bold text-light-concrete">My Projects</h2>
+          <a href="https://github.com/muktiasixs" target="_blank" rel="noopener noreferrer" aria-label="GitHub Projects" className="text-light-concrete hover:text-amber-300 transition-colors duration-300">
+            <FaGithub size={32} />
+          </a>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <ProjectCard key={project.id} project={project} delay={index * 150} />

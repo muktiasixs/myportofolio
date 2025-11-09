@@ -1,4 +1,4 @@
-// src/components/Navbar.jsx
+
 import React, { useState } from 'react';
 import icon from '../assets/icon.png';
 
@@ -18,19 +18,8 @@ const Navbar = () => {
   };
 
 
-  const linkClass = "block py-2 px-3 text-light-concrete hover:text-subtle-concrete md:hover:bg-transparent md:p-0 transition-colors duration-300 " +
-                    "relative " + 
-                    "after:content-[''] " + 
-                    "after:absolute " +
-                    "after:bottom-0 " + 
-                    "after:left-0 " +
-                    "after:w-full " + 
-                    "after:h-0.5 " + 
-                    "after:bg-accent-steel " + 
-                    "after:scale-x-0 " + 
-                    "after:origin-middle " + 
-                    "after:transition-transform after:duration-300 after:ease-out " + 
-                    "hover:after:scale-x-100"; 
+  const linkClass = "block py-2 px-3 text-light-concrete hover:text-amber-300 md:hover:bg-transparent md:p-0 transition-all duration-300 " +
+                    "hover:[text-shadow:0_0_18px_theme(colors.amber.300)]";
 
   return (
     <nav 

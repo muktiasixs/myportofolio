@@ -2,8 +2,8 @@
 import React from 'react';
 import { useSpring, animated, config } from '@react-spring/web';
 import { useInView } from 'react-intersection-observer';
-import { TypeAnimation } from 'react-type-animation';
 import { FaDownload } from 'react-icons/fa';
+import TextType from '../TextType/TextType';
 import StarryBackground from './StarryBackground';
 
 const StatCard = ({ value, label, suffix = '' }) => {
@@ -57,20 +57,22 @@ const Hero = () => {
             Dermagani Muktiasa
           </h1>
 
-          <TypeAnimation
-            sequence={[
+          <TextType
+            as="p"
+            text={[
               'Computer Science Student', 2000,
-              'Aspiring Web Developer', 2000,
-              'Software Developer', 2000,
-              'Data Scientist & Analyst', 2000,
-              'Management & Networking', 2000,
-              'UI/UX Designer', 2000,
-              'Ready for an Internship!', 2000,
+              'Aspiring Web Developer',
+              'Software Developer',
+              'Data Scientist & Analyst',
+              'Management & Networking',
+              'UI/UX Designer',
+              'Ready for an Internship!',
             ]}
-            wrapper="p"
-            speed={50}
+            typingSpeed={50}
+            pauseDuration={1500}
+            showCursor={true}
+            cursorCharacter="▎"
             className="text-xl md:text-2xl text-subtle-concrete mb-8"
-            repeat={Infinity}
           />
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -86,8 +88,8 @@ const Hero = () => {
               href="https://drive.google.com/drive/folders/1jyRFZd1TTF4m_MQMNuKuTCEog6yARbd3?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center border border-accent-steel text-accent-steel px-8 py-3 rounded-lg text-lg font-semibold 
-                         hover:bg-sky-800 hover:text-bg-deep-industrial transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="inline-flex items-center justify-center bg-light-concrete text-deep-industrial px-8 py-3 rounded-lg text-lg font-semibold border border-accent-steel
+                         hover:bg-amber-300 hover:shadow-lg hover:shadow-amber-300/50 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
                 <FaDownload className="mr-2" />
               Download CV
