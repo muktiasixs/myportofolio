@@ -5,9 +5,9 @@ import liProfilePic from '../assets/li.jpeg';
 import ttProfilePic from '../assets/tt.jpeg';
 
 const primarySocials = [
-  { name: 'Instagram', username: '@mutiasasuu', profilePic: igProfilePic, description: 'My daily life & inspirations.', link: 'https://www.instagram.com/mutiasasuu' },
+  { name: 'Instagram', username: '@derdontunderstand', profilePic: igProfilePic, description: 'My daily life & inspirations.', link: 'https://www.instagram.com/derdontunderstand' },
   { name: 'LinkedIn', username: 'Dermagani Muktiasa', profilePic: liProfilePic, description: 'Connect with me professionally!', link: 'https://www.linkedin.com/in/dermagani-muktiasa-326447271' },
-  { name: 'TikTok', username: '@nyaruru_', profilePic: ttProfilePic, description: 'an average gamer content creator', link: 'https://www.tiktok.com/@nyaruru_' },
+  { name: 'TikTok', username: 'Manis', profilePic: ttProfilePic, description: 'an average gamer content creator', link: 'https://www.tiktok.com/@xcnez_' },
 ];
 
 const secondarySocials = [
@@ -17,17 +17,17 @@ const secondarySocials = [
   { name: 'YouTube', icon: 'https://cdn-icons-png.flaticon.com/128/174/174883.png', link: 'https://www.youtube.com/@m4n1s' },
   { name: 'Facebook', icon: 'https://cdn-icons-png.flaticon.com/128/174/174848.png', link: 'https://www.facebook.com/dermagani.muktiasa.58/' },
   { name: 'Twitter / X', icon: 'https://cdn-icons-png.flaticon.com/128/5969/5969020.png', link: 'https://x.com/mutiasasu' },
-  { name: 'github', icon: 'https://registry.npmmirror.com/@lobehub/icons-static-png/1.74.0/files/light/github.png', link: 'https://github.com/muktiasixs' }, 
+  { name: 'github', icon: 'https://registry.npmmirror.com/@lobehub/icons-static-png/1.74.0/files/light/github.png', link: 'https://github.com/muktiasixs' },
 ];
 
 const SocialMedia = () => {
   return (
-    
+
     <section id="social-media" className="py-24 bg-deep-industrial">
       <div className="container mx-auto px-4 max-w-5xl">
         <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">Find Me On</h2>
 
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {primarySocials.map((platform, index) => (
             <a
@@ -50,14 +50,14 @@ const SocialMedia = () => {
           ))}
         </div>
 
-        
+
         <div className="flex justify-center items-center flex-wrap gap-8">
           {secondarySocials.map((platform, index) => (
             <div key={index} className="group flex flex-col items-center text-center">
               <a href={platform.link} target="_blank" rel="noopener noreferrer" className="transition-transform duration-300 hover:scale-110">
-                <img 
-                  src={platform.icon} 
-                  alt={platform.name} 
+                <img
+                  src={platform.icon}
+                  alt={platform.name}
                   className="w-10 h-10 object-contain"
                   draggable="false"
                 />
