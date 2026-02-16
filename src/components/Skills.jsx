@@ -29,12 +29,13 @@ const skillsData = {
     { name: 'Canva', iconUrl: 'https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000' },
     { name: 'Excel', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/e/e3/Microsoft_Office_Excel_%282019%E2%80%932025%29.svg' },
     { name: 'Photoshop', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968520.png' },
-    { name: 'Illustrator', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968472.png' }, 
-    { name: 'Premiere Pro', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg' }, 
-    { name: 'After Effects', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg' }, 
-    { name: 'Cursor', iconUrl: 'https://cursor.com/assets/images/logo.svg' },
+    { name: 'Illustrator', iconUrl: 'https://cdn-icons-png.flaticon.com/128/5968/5968472.png' },
+    { name: 'Premiere Pro', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg' },
+    { name: 'After Effects', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/c/cb/Adobe_After_Effects_CC_icon.svg' },
+    { name: 'Antigravity', iconUrl: 'https://pbs.twimg.com/profile_images/1990585614279049216/-Zz6T2nk_400x400.png' },
     { name: 'Visual Studio', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/2/2c/Visual_Studio_Icon_2022.svg' },
-    
+    { name: 'DaVinci Resolve', iconUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/DaVinci_Resolve_Studio.png/960px-DaVinci_Resolve_Studio.png' },
+
   ],
 };
 
@@ -63,7 +64,7 @@ const SkillScroll = ({ skills, direction }) => {
 
 const Skills = () => {
   return (
-    
+
     <section id="skills" className="py-24 bg-deep-industrial">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 text-light-concrete">skills & tools</h2>
